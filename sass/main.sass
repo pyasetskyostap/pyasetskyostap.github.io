@@ -1,0 +1,455 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	background-image: url(/../img/img.png)
+	background-size: cover
+	height: 790px
+	h1
+		margin-top: 20%
+		color: white
+		span
+		 color: #FFF200
+	p
+		color: white
+		text-align: center
+		width: 100%
+		max-width: 720px
+
+h1
+	font-family: "LatoBold"
+	text-align: center
+	font-size: 64px
+	text-transform: uppercase
+	letter-spacing: 2px
+
+h2
+	font-family: "LatoBold"
+	text-align: center
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 35px
+	margin-bottom: 10px
+
+p
+	font-family: "LatoRegular"
+	margin: 0 auto
+
+.advant
+	p
+		text-align: center
+		width: 100%
+		max-width: 720px
+		font-size: 15px
+		color: grey
+	h2
+		color: black
+		span
+			color: #009DDA
+		margin-top: 30px
+
+.advantages
+	padding-bottom: 50px
+
+.box_block
+	display: inline-block
+	text-align: center
+	width: 220px
+	height: 270px
+	border: solid rgb(235,235,235) 2px
+	margin: 15px
+	p
+		font-size: 15px
+		font-family: "LatoLight"
+	img
+		width: 40%
+		margin: 0 auto
+		padding-top: 30px
+
+.box_block::after
+	content: ''
+	display: block
+	clear: both
+
+.boxes
+	margin: 0 auto
+
+.boxes::after
+	content: ''
+	display: block
+	clear: both
+
+h4
+	font-family: "LatoHeavy"
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 20px
+	margin-bottom: 0
+
+.prod
+	float: left
+	margin:  20px 25px 7px 0
+	width: 120px
+	height: 120px
+
+.smt
+	font-family: "LatoLight"
+	font-size: 14px
+
+.bst
+	color: #614D9A
+	font-weight: normal
+	font-size: 15px
+
+.box_block1
+	display: inline-block
+	/*border: solid black 1px*/
+	margin: 10px 0 60px
+	width: 335px
+
+.our_products
+	width: 75%
+	margin: 0 auto
+	padding-top: 50px
+	padding-bottom: 100px
+
+/*.our_products::after
+	content: ''
+	display: block
+	clear: both*/
+
+.all_box
+	padding-top: 50px
+
+.image
+	margin: 0
+	padding-top: 100px
+	text-align: center
+	position: relative
+	width: 100%
+	h2
+		position: absolute
+		bottom: 45px
+		left: 0
+		width: 100%
+		span
+			color: white
+			padding: 10px
+
+/* flexbox */
+
+.flex-container
+	margin: 0
+	padding: 0
+	display: flex
+	/*background-color: red*/
+	justify-content: center
+	flex-wrap: wrap
+	align-items: center
+	flex-direction: row
+	img
+		width: 88px
+		height: 110px
+		margin: 0 auto
+		padding-top: 30px
+	p
+		font-size: 15px
+		font-family: "LatoLight"
+	.row
+		width: auto
+
+.flex-item
+	text-align: center
+	height: 300px
+	border: solid rgb(235,235,235) 2px
+	line-height: 25px
+	margin: 15px
+	padding: 15px
+	/*background-color: green*/
+
+.item-1
+	flex-basis: 15%
+
+.item-2
+	flex-basis: 15%
+
+.item-3
+	flex-basis: 15%
+
+.item-4
+	flex-basis: 15%
+
+.item-5
+	flex-basis: 15%
+
+/* second flex */
+
+.flex-container1
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 15px
+
+.flex-item_n
+	/*border: solid black 1px*/
+	margin: 15px
+
+.flex-container2
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 15px
+
+.flex-item_m
+	/*border: solid black 1px*/
+	margin: 15px
+
+.touch_in
+	span
+		color: #009DDA
+	p
+		text-align: center
+		width: 100%
+		max-width: 720px
+		font-size: 15px
+		color: grey
+		padding-bottom: 65px
+
+.foot1
+	text-align: left
+
+.foot2
+	text-align: right
+
+footer
+	padding-bottom: 50px
+
+/* forma */
+
+.forms
+	padding: 62px
+	label
+		margin-top: 15px
+		margin-bottom: 10px
+		display: block
+		span
+			letter-spacing: 1.5px
+			display: block
+			margin-bottom: 6px
+			color: #778390
+	input
+		display: block
+		border: 1px solid white
+		background-color: transparentize(#243343, .9)
+		color: #fff
+		text-indent: 20px
+		padding: 10px 0
+		transition: all .5s ease
+	input::-moz-placeholder
+		color: white
+		&:active
+			color: white
+	textarea
+		background-color: transparentize(#243343, .9)
+		border: 1px solid white
+		text-indent: 20px
+		padding: 10px 0
+		resize: none
+		width: 415px
+		height: 180px
+	.colortext
+		float: left
+		margin-right: 13px
+	.checkbox
+		float: none
+		margin-top: 15px
+	p
+		color: white
+		padding-bottom: 10px
+		float: left
+		margin: 10px
+
+	.new_try
+		color: white
+		input, label
+			display: inline-block
+			vertical-align: baseline
+			margin-top: 0
+			margin-bottom: 0
+
+.form_custom
+	background-color: transparentize(#243343, .3)
+
+.form_txt
+	float: left
+	color: white
+	padding-top: 70px
+
+.buttons
+	height: 50px
+	width: 100px
+	background-color: yellow
+	border: none
+	margin-top: 10px
+
+/*menu*/
+
+.menu
+	&-link
+		z-index: 9
+		display: block
+		width: 50px
+		height: 50px
+		background-color: #fff
+		border-radius: 50%
+		box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+		position: fixed
+		top: 20px
+		left: 20px
+		span, span:before, span:after
+			display: block
+			height: 2px
+			width: 18px
+			position: absolute
+			left: 50%
+			margin-left: -9px
+			top: 50%
+			margin-top: -1px
+			background-color: #333
+
+		span:before
+			transition: all 0.2s
+			content: ''
+			margin-top: -6px
+
+		span:after
+			transition: all 0.2s
+			content: ''
+			margin-top: 4px
+		&_active span
+			background-color: transparent
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+
+	opacity: .9
+	background-color: purple
+	position: fixed
+	width: 100vw
+	height: 100vh
+	z-index: 1
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: -100vw
+	&_active
+		left: 0
+	ul
+		margin: 0
+		list-style: none
+		padding: 0
+		text-align: center
+		li
+			width: 100vw
+		a
+			display: block
+			width: 100%
+			line-height: 4
+			font-weight: 100
+			letter-spacing: 4px
+			color: #fff
+			transition: all 0.2s
+			&:hover
+				background-color: rgba(255,255,255,.4)
+				text-decoration: none
+
+.main_products
+	/*border: 1px solid black*/
+	background-image: url(/../img/img.png)
+	background-size: cover
+	h2
+		padding: 25px
+		margin: 50px
+		color: white
+		span
+			color: yellow
+
+.main_why
+	padding-bottom: 52px
+
+.products_all
+	padding-bottom: 100px
+
+/* footer */
+
+.wrapper
+	display: flex
+	flex-direction: column
+	.foot_txt2
+		width: 50%
+		float: left
+		margin: 15px
+
+.content
+	flex: 1 0 auto
+
+.footer
+	flex: 0 0 auto
+	background: black
+	color: grey
+	height: 100%
+
+.foot_img
+	float: right
+
+.foot_img1
+	height: 30px
+	width: 30px
+	margin: 15px
+
+@import "media" // Всегда в конце
